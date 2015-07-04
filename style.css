@@ -1,0 +1,32 @@
+p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align:center;
+}
+
+h1, h4 {
+	text-align:center;
+	font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+h4 {
+	margin-bottom:0;
+}
+
+
+#mainTable, td, th{
+	border-spacing: 50px 50px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	table-layout:fixed;
+	vertical-align: top;
+}
+
+#stateTable {
+	border-spacing: 10px 1px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background-color:rgba(220,220,220,0.2);
+	margin-bottom: 10px;
+}

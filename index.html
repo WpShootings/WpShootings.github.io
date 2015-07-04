@@ -1,1 +1,48 @@
-"Hello World" 
+<html>
+	<head>
+		<script src="Chart.min.js"></script>
+		<script src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<h1>A Visualization of the 2015 Washington Post Police Shooting Data</h1>
+		<h4>Updated: 7/3/2015</h4>
+		<table id="mainTable">
+			<tr>
+				<td>
+				<div>
+					<p>Race Breakdown</p>
+					<canvas id="raceChart" width="400" height="400"></canvas>
+					<br />
+					<input type="checkbox" id="racePercent">Adjust for population percent</input>
+				</div>
+				</td>
+				<td>
+				<div>
+					<p>Shootings by Month</p>
+					<canvas id="dateChart" width="400" height="400"></canvas>
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<div>
+					<p>Top Ten States by Shootings</p>
+					<table id="stateTable"></table>
+					<input type="checkbox" id="statePercent">Adjust for state population</input>
+				</div>
+				</td>
+				<td>
+				<div>
+					<p>Gender Breakdown</p>
+					<canvas id="genderChart" width="300" height="300"></canvas>
+				</div>
+				</td>
+			</tr>
+		</table>
+		<p>Created by Drake Levy
+			<br />
+			<a href="mailto:drakelevy@berkeley.edu">drakelevy@berkeley.edu</a>
+		</p>
+	</body>
+</html>
