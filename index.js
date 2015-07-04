@@ -13,6 +13,7 @@ function setupListeners() {
 		raceChart.destroy();
 		loadRaceChart(rawData);
 	});
+	
 	var statePercentCheckBox = document.getElementById("statePercent");
 	statePercentCheckBox.addEventListener("change", function() {
 		var table = document.getElementById("stateTable");
@@ -29,19 +30,11 @@ function loadCharts(rawData) {
 	loadGenderChart(rawData);
 }
 
-function initializeChart() {
-	//var ctx = document.getElementById("myChart").getContext("2d");
-	//var newChart = new Chart(ctx).PolarArea(data);
-}
-
 function loadCSVText() {
-	console.log("Loading text");
 	var rawFile = new XMLHttpRequest();
 	rawFile.onreadystatechange = function () {
-		console.log("state change " + rawFile.readyState + " " + rawFile.status);
 		if (rawFile.readyState === 4) {
 				if (rawFile.status === 200) {
-					console.log("Sending to processData");
 					var allText = rawFile.responseText;
 					processData(allText);
 				}
@@ -53,7 +46,6 @@ function loadCSVText() {
 
 //Adopted from http://stackoverflow.com/questions/7431268/how-to-read-data-from-csv-file-using-javascript
 function processData(allText) {
-	console.log("Processing text");
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
     var lines = [];
@@ -265,7 +257,6 @@ function loadGenderChart(rawChart) {
 			gender[1] += 1;
 		}
 	}
-	console.log(gender);
 	
 	data[0] = {
 		value: gender[0],
