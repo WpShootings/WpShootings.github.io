@@ -189,6 +189,17 @@ function loadStateChart(rawData) {
 		"NE": .0059, "WV": .0058, "ID": .0051, "HI": .0045, "ME": .0042, "NH": .0042, "RI": .0033, "MT": .0032, "DE": .0029, "SD": .0027, "ND": .0023, "AK": .0023, "DC": .0021, "VT": .0020, "WY": .0018
 	};
 	
+	var stateAbrFlipped = {"Alabama":"AL","Alaska":"AK","Arizona":"AZ","Arkansas":"AR","California":"CA","Colorado":"CO","Connecticut":"CT","Delaware":"DE","Florida":"FL","Georgia":"GA","Hawaii":"HI","Idaho":"ID","Illinois":"IL","Indiana":"IN","Iowa":"IA","Kansas":"KS",
+	"Kentucky":"KY","Louisiana":"LA","Maine":"ME","Maryland":"MD","Massachusetts":"MA","Michigan":"MI","Minnesota":"MN","Mississippi":"MS","Missouri":"MO","Montana":"MT","Nebraska":"NE","Nevada":"NV","New Hampshire":"NH","New Jersey":"NJ",
+	"New Mexico":"NM","New York":"NY","North Carolina":"NC","North Dakota":"ND","Ohio":"OH","Oklahoma":"OK","Oregon":"OR","Pennsylvania":"PA","Rhode Island":"RI","South Carolina":"SC","South Dakota":"SD","Tennessee":"TN","Texas":"TX","Utah":"UT",
+	"Vermont":"VT","Virginia":"VA","Washington":"WA","West Virginia":"WV","Wisconsin":"WI","Wyoming":"WY", "Washington DC":"DC"};
+	
+	//Didn't want to take the time to manually flip the key/value pairs so I'll let a for loop do it, shouldn't affect runtime
+	var stateAbr = {};
+	for (var key in stateAbrFlipped) {
+		stateAbr[stateAbrFlipped[key]] = key;
+	}
+	
 	for (var i = 0; i < rawData.length; i++) {
 		var state = rawData[i][9];
 		state = state.substring(6);
@@ -228,7 +239,7 @@ function loadStateChart(rawData) {
 		for (var c = 0; c < 2; c++) {
 			var cell = document.createElement("td");
 			if (c == 0) {
-				var cellText = document.createTextNode(sorted[r].name);
+				var cellText = document.createTextNode(stateAbr[sorted[r].name]);
 			} else {
 				if (statePercentCheckBox.checked == true) {
 					var cellText = document.createTextNode(sorted[r].val + "%");
