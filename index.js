@@ -2,7 +2,6 @@ var rawData;
 var raceChart;
 
 document.addEventListener("DOMContentLoaded", function(event) {
-	initializeChart();
 	loadCSVText();
 	setupListeners();
 });
@@ -62,7 +61,7 @@ function processData(allText) {
     }
 	
 	rawData = lines;
-	loadCharts(rawData);
+	loadCharts(rawData); //Initial chart loading call
 }
 
 function loadRaceChart(rawData) {
