@@ -5,8 +5,11 @@
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
-		<h1>A Visualization of the 2015 Washington Post Police Shooting Data</h1>
-		<h4>Updated: 7/3/2015</h4>
+		<div id="header">
+			<h1>A Visualization of the 2015 Washington Post Police Shooting Data</h1>
+			<h4><a href="https://github.com/washingtonpost/data-police-shootings" target="_blank">Washington Post Github</a></h4>
+			<h4>Updated: 7/6/2015</h4>
+		</div>
 		<table id="mainTable">
 			<tr>
 				<td>
@@ -14,7 +17,7 @@
 					<p>Race Breakdown</p>
 					<canvas id="raceChart" width="400" height="400"></canvas>
 					<br />
-					<input type="checkbox" id="racePercent">Adjust for population percent</input>
+					<input type="checkbox" id="racePercent"> Adjust for population percent</input>
 				</div>
 				</td>
 				<td>
@@ -29,7 +32,7 @@
 				<div>
 					<p>Top Ten States by Shootings</p>
 					<table id="stateTable"></table>
-					<input type="checkbox" id="statePercent">Adjust for state population</input>
+					<input type="checkbox" id="statePercent"> Adjust for state population</input>
 				</div>
 				</td>
 				<td>
@@ -40,11 +43,20 @@
 				</td>
 			</tr>
 		</table>
-		<p>Created by Drake Levy
+		<div id="mi">
+			<p>Mental Illness Percent by Race</p>
+			<canvas id="mentalChart" width="400" height="400"></canvas>
+		</div>
+		<br />
+		<p id="footer">
 			<br />
-			<a href="mailto:drakelevy@berkeley.edu">drakelevy@berkeley.edu</a>
+			Created by Drake Levy
 			<br />
-			<a href="https://www.linkedin.com/in/drakelevy">LinkedIn</a>
+			<a href="mailto:drakelevy@berkeley.edu" target="_blank">drakelevy@berkeley.edu</a>
+			<br />
+			<a href="https://www.linkedin.com/in/drakelevy" target="_blank">LinkedIn</a>
+			<br />
+			<br />
 		</p>
 	</body>
 </html>

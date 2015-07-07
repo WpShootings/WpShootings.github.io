@@ -39,6 +39,7 @@ function loadCharts(rawData) {
 	loadDateChart(rawData);
 	loadStateChart(rawData);
 	loadGenderChart(rawData);
+	loadMentalIllnessChart(rawData);
 }
 
 function loadCSVText() {
@@ -127,10 +128,10 @@ function loadRaceChart(rawData) {
 	
 	data["datasets"] = [
 		{
-			fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,0.8)",
-            highlightFill: "rgba(220,220,220,0.75)",
-            highlightStroke: "rgba(220,220,220,1)",
+			fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            highlightFill: "rgba(151,187,205,0.1)",
+            highlightStroke: "rgba(151,187,205,1)",
 			data: [races["Other"], races["Asian"], races["Hispanic"], races["Black"], races["White"]]
 		}
 	];
@@ -166,12 +167,12 @@ function loadDateChart(rawData) {
 	data["datasets"] = [
 		{
 			label: "Shootings by date",
-			fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
+			fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
+            pointHighlightStroke: "rgba(151,187,205,1)",
 			data: date_values
 		}
 	];
@@ -256,7 +257,7 @@ function loadStateChart(rawData) {
 				if (statePercentCheckBox.checked == true) {
 					var cellText = document.createTextNode(sorted[r].val + "%");
 				} else {
-					var cellText = document.createTextNode(sorted[r].val);					
+					var cellText = document.createTextNode(sorted[r].val);
 				}
 			}
 			cell.appendChild(cellText);
@@ -267,7 +268,7 @@ function loadStateChart(rawData) {
 	table.appendChild(tbody);
 }
 
-function loadGenderChart(rawChart) {
+function loadGenderChart(rawData) {
 	var data = [];
 	var gender = [0, 0];
 	
@@ -280,20 +281,60 @@ function loadGenderChart(rawChart) {
 		}
 	}
 	
-	data[0] = {
+	data[1] = {
 		value: gender[0],
-		color: "#46BFBD",
-        highlight: "#5AD3D1",
+		color: "rgba(151,187,205,0.8)",
+        highlight: "rgba(151,187,205, 0.6)",
 		label: "Male"
 	};
 	
-	data[1] = {
+	data[0] = {
 		value: gender[1],
-        color:"#F7464A",
-        highlight: "#FF5A5E",
+        color:"rgba(247, 70, 74, 0.8)",
+        highlight: "rgba(247, 70, 74, 0.6)",
 		label: "Female"
 	};
 	
 	var ctx = document.getElementById("genderChart").getContext("2d");
-	var genderChart = new Chart(ctx).Pie(data);
+	var genderChart = new Chart(ctx).Doughnut(data);
+}
+
+function loadMentalIllnessChart(rawData) {
+	var data = {};
+	var races = {"race:A": 0, "race:W": 0, "race:H": 0, "race:B": 0, "race:O": 0};
+	var total = {"race:A": 0, "race:W": 0, "race:H": 0, "race:B": 0, "race:O": 0};
+	
+	//var raceSelect = document.getElementById("raceSelect");
+	
+	for (var i = 0; i < rawData.length; i++) {
+		var m = rawData[i][10];
+		var r = rawData[i][7];
+		if (m === "signs_of_mental_illness:TRUE") {
+			races[r] += 1;
+		}
+		total[r] += 1;
+	}
+	
+	data["labels"] = ["White", "Black", "Hispanic", "Asian", "Other"];
+	data["datasets"] = [
+		{
+			label: "Mental Illness Percent by Race",
+			fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+			data: [(races["race:W"]/total["race:W"] * 100).toFixed(2), (races["race:B"]/total["race:B"] * 100).toFixed(2), (races["race:H"]/total["race:H"] * 100).toFixed(2),
+				(races["race:A"]/total["race:A"] * 100).toFixed(2), (races["race:O"]/total["race:O"] * 100).toFixed(2)]
+		}
+	];
+	
+	var ctx = document.getElementById("mentalChart").getContext("2d");
+	var mentalChart = new Chart(ctx).Radar(data,
+		{
+			 pointLabelFontSize : 14,
+			 pointDotRadius: 5
+		}
+	);
 }

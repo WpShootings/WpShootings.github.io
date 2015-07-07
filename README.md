@@ -11,3 +11,4 @@ Hey, this is a github page I threw together to visualize the Washington Post pol
 <drakelevy@berkeley.edu>  
 [LinkedIn](https://www.linkedin.com/in/drakelevy)  
 [Washington Post Data License](https://github.com/washingtonpost/data-police-shootings/blob/master/LICENSE)  
+[Helped Built With Chart.js[(https://github.com/nnnick/Chart.js)
