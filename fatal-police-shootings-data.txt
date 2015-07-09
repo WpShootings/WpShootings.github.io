@@ -180,7 +180,7 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 277,James Greenwell,3/11/2015,shot,gun,31,M,W,Memphis,TN,TRUE
 279,Benito Osorio,3/11/2015,shot,gun,39,M,H,Santa Ana,CA,FALSE
 281,Ryan Dean Burgess,3/11/2015,shot,toy weapon,31,M,W,Kingman,AZ,FALSE
-307,Gilbert Fleury,3/11/2015,shot,gun,54,M,W,Bay Pinette,AL,FALSE
+307,Gilbert Fleury,3/11/2015,shot,gun,54,M,W,Bay Minette,AL,FALSE
 581,William Russell  Smith,3/11/2015,shot,gun,53,M,W,Hoover,AL,TRUE
 248,Terry Garnett Jr.,3/11/2015,shot,"car, vehicle",37,M,B,Elkton,MD,FALSE
 282,Bobby Gross,3/12/2015,shot,unarmed,35,M,B,Washington,DC,TRUE
@@ -198,12 +198,12 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 292,Roberto Leon,3/17/2015,shot,unarmed,22,M,H,Sacramento,CA,FALSE
 216,Andrew Charles Shipley,3/17/2015,shot,gun,49,M,W,Medford,OR,TRUE
 217,Declan Owen,3/17/2015,shot,gun,24,M,W,Dublin,NC,FALSE
-221,Alice Brown,3/17/2015,shot,"car, vehicle",24,F,W,San Francisco,CA,FALSE
+221,Alice Brown,3/17/2015,shot,"car, vehicle",24,F,W,San Francisco,CA,TRUE
 294,Jeff Alexander,3/18/2015,shot,knife,47,M,W,Bakersfield,CA,FALSE
 225,Kaylene Stone,3/18/2015,shot,gun,49,F,W,Glendale,AZ,FALSE
 226,Garland Lee Wingo,3/18/2015,shot,gun,64,M,W,Tallahassee,FL,FALSE
 265,Kendre Alston,3/19/2015,shot,gun,16,M,B,Jacksonville,FL,FALSE
-295,Jamison  Childress,3/19/2015,shot,unarmed,20,M,W,Sumas,WA,FALSE
+295,Jamison  Childress,3/19/2015,shot,unarmed,20,M,W,Sumas,WA,TRUE
 306,Robert Burdge,3/19/2015,shot,gun,36,M,W,Bakersfield,CA,FALSE
 228,Shane Watkins,3/19/2015,shot,box cutter,39,M,W,Lawrence County,AL,TRUE
 229,Brandon Jones,3/19/2015,shot,unarmed,18,M,B,Cleveland,OH,FALSE
@@ -216,7 +216,7 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 312,Jason Smith,3/21/2015,shot,gun,42,M,W,Columbus,OH,FALSE
 235,Enoch Gaver,3/21/2015,shot,gun,21,M,W,Cottonwood,AZ,FALSE
 231,Phillip Conley,3/22/2015,shot,knife,37,M,W,Vallejo,CA,TRUE
-233,Christopher Ryan Healy,3/22/2015,shot and Tasered,knife,36,M,W,Portland,OR,FALSE
+233,Christopher Ryan Healy,3/22/2015,shot and Tasered,knife,36,M,W,Portland,OR,TRUE
 234,Denzel Brown,3/22/2015,shot and Tasered,unarmed,21,M,B,Islip,NY,FALSE
 237,Devin Gates,3/23/2015,shot,gun,24,M,B,Santa Clara,CA,FALSE
 313,Stephen Snyder,3/24/2015,shot,gun,,M,W,Fond du Lac,WI,FALSE
@@ -462,6 +462,34 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 577,Alan  Bellew,6/28/2015,shot,toy weapon,29,M,W,Portland,OR,FALSE
 585,Richard LaPort,6/29/2015,shot,gun,51,M,,Edinburg,NY,TRUE
 586,Clay Alan  Lickteig,6/30/2015,shot,gun,52,M,W,Franklin,NC,FALSE
-587,Kevin Lamont Judson,7/1/2015,shot,,24,M,B,McMinnville,OR,FALSE
+587,Kevin Lamont Judson,7/1/2015,shot,unarmed,24,M,B,McMinnville,OR,FALSE
 589,Kaleb Landon,7/1/2015,shot,undetermined,32,M,,Josephine County,OR,FALSE
 588,Douglas Buckley,7/2/2015,shot,toy weapon,45,M,W,Brockton,MA,FALSE
+601,Ton Nguyen,7/2/2015,shot,knife,60,M,A,San Diego,CA,FALSE
+603,Victor Emanuel Larosa,7/2/2015,shot,"car, vehicle",23,M,B,Jacksonville,FL,FALSE
+604,Brian Johnson,7/2/2015,shot,crossbow,59,M,,Meadow Bridge,WV,TRUE
+597,Cesar A. Limon Juarez,7/3/2015,shot and Tasered,knife,27,M,,West Covina,CA,FALSE
+598,TK TK,7/3/2015,shot,gun,,M,H,Lancaster,CA,FALSE
+599,Oscar Camacho,7/3/2015,shot,gun,33,M,,Camden,NJ,FALSE
+602,Joseph Julian,7/3/2015,shot,undetermined,40,M,W,Miami Beach,FL,FALSE
+591,Robert Elando Malone,7/4/2015,shot,gun,42,M,B,Oklahoma City,OK,FALSE
+595,Michael Shannon Gaby,7/4/2015,shot,gun,37,M,,Morristown,TN,FALSE
+596,Kawanza Beaty,7/4/2015,shot,gun,23,M,B,Newport News,VA,FALSE
+600,Bryan David Bauer,7/4/2015,shot,gun,36,M,,Henderson,NV,FALSE
+592,John Deming,7/5/2015,shot,unarmed,19,M,W,Pleasanton,CA,FALSE
+593,Michael Holt,7/5/2015,shot,gun,35,M,W,Austin,TX,FALSE
+594,Richard Munroe,7/5/2015,shot and Tasered,toy weapon,25,M,,Austin,TX,TRUE
+605,Johnny Ray Anderson,7/5/2015,shot,unarmed,43,M,W,Hawaiian Gardens,CA,FALSE
+590,Tyler Rogers,7/6/2015,shot,gun,20,M,W,Oklahoma City,OK,FALSE
+606,Hagan Esty-Lennon,7/6/2015,shot,knife,42,M,,Bath,NH,FALSE
+607,David Oliva Sarabia,7/6/2015,shot and Tasered,knife,42,M,,Atwater,CA,FALSE
+610,TK TK,7/6/2015,shot and Tasered,"car, vehicle",29,M,,Lakewood,CA,TRUE
+619,Jason Hendley,7/6/2015,shot,knife,29,M,,Los Angeles,CA,FALSE
+608,TK TK,7/7/2015,shot,gun,,M,,Houston,TX,FALSE
+609,TK TK,7/7/2015,shot,metal pole,,M,W,Mesa,AZ,FALSE
+611,Joe Cody,7/7/2015,shot,gun,59,M,W,Dallas,TX,FALSE
+614,TK TK,7/7/2015,shot,gun,,M,,Bakersfield,CA,FALSE
+615,Jose Graciano Lopez,7/7/2015,shot,gun,39,M,H,Edinburg,TX,TRUE
+616,TK TK,7/7/2015,shot,knife,,M,,Atlantic City,NJ,FALSE
+617,TK TK,7/7/2015,shot,gun,,M,,Sugar Creek,MO,FALSE
+618,Joshua Blough,7/7/2015,shot,knife,28,M,W,Elizabethtown,KY,FALSE
