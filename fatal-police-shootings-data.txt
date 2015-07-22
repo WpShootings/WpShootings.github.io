@@ -327,7 +327,7 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 418,Fridoon Zalbeg Rawshannehad,4/30/2015,shot,unarmed,42,M,O,San Diego,CA,TRUE
 424,Erick Emmanuel Sanchez,4/30/2015,shot and Tasered,metal object,22,M,H,El Paso,TX,FALSE
 425,Kenneth Mathena,5/1/2015,shot,gun,52,M,W,Smyrna,DE,FALSE
-426,Kevin Vance Norton,5/3/2015,shot,gun,36,M,W,Roosevelt,UT,FALSE
+426,Kevin Vance Norton,5/3/2015,shot,gun,36,M,W,Roosevelt,UT,TRUE
 427,Elton Simpson,5/3/2015,shot,gun,30,M,B,Garland,TX,FALSE
 428,Nadir Soofi,5/3/2015,shot,gun,34,M,O,Garland,TX,FALSE
 445,Billy Grimm,5/3/2015,shot,gun,44,M,H,Albuquerque,NM,FALSE
@@ -462,7 +462,7 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 577,Alan  Bellew,6/28/2015,shot,toy weapon,29,M,W,Portland,OR,FALSE
 585,Richard LaPort,6/29/2015,shot,gun,51,M,,Edinburg,NY,TRUE
 586,Clay Alan  Lickteig,6/30/2015,shot,gun,52,M,W,Franklin,NC,FALSE
-587,Kevin Lamont Judson,7/1/2015,shot,unarmed,24,M,B,McMinnville,OR,FALSE
+587,Kevin Lamont Judson,7/1/2015,shot,"car, vehicle",24,M,B,McMinnville,OR,FALSE
 589,Kaleb Landon,7/1/2015,shot,undetermined,32,M,,Josephine County,OR,FALSE
 588,Douglas Buckley,7/2/2015,shot,toy weapon,45,M,W,Brockton,MA,FALSE
 601,Ton Nguyen,7/2/2015,shot,knife,60,M,A,San Diego,CA,FALSE
@@ -518,8 +518,19 @@ id,name,date,manner_of_death,armed,age,gender,race,city,state,signs_of_mental_il
 641,Charles Crandall,7/14/2015,shot,gun,76,M,,Southington,OH,FALSE
 643,Eugene Kailing,7/15/2015,shot and Tasered,metal pipe,43,M,W,Marion,MI,FALSE
 642,TK TK,7/16/2015,shot,metal hand tool,,M,,Moreno Valley,CA,TRUE
-646,TK TK,7/16/2015,shot,sword,,M,,Wauwatosa,WI,TRUE
-647,Edward Foster,7/16/2015,shot,gun,35,M,B,Homestead,FL,FALSE
-648,TK TK,7/16/2015,shot,gun,,M,,Kansas City,KS,FALSE
+646,Alberto  Gonzalez,7/16/2015,shot,sword,29,M,H,Wauwatosa,WI,TRUE
+647,Edward Foster III,7/16/2015,shot,gun,35,M,B,Homestead,FL,FALSE
+648,Patrick Stephen Pippin,7/16/2015,shot,gun,30,M,W,Kansas City,KS,FALSE
 649,Mohammad Youssef Abdulazeez,7/16/2015,shot,gun,24,M,O,Chattanooga,TN,FALSE
-644,TK TK,7/17/2015,shot,"car, vehicle",,M,,Seattle,WA,FALSE
+656,Saige Hack,7/16/2015,shot,gun,,M,,Cheyenne,WY,FALSE
+644,Samuel Smith,7/17/2015,shot,"car, vehicle",27,M,W,Seattle,WA,FALSE
+651,Albert Joseph Davis,7/17/2015,shot and Tasered,unarmed,23,M,,Orlando,FL,FALSE
+655,Jackie Brand,7/17/2015,shot,gun,50,M,,Needles,CA,TRUE
+657,Darrius Stewart,7/17/2015,shot,unarmed,19,M,B,Memphis,TN,FALSE
+659,Jackie Brand,7/17/2015,shot,gun,50,M,,Highland,CA,TRUE
+660,Jose Roman Rodriguez,7/17/2015,shot,undetermined,24,M,H,Brownsville,TX,FALSE
+650,David  Wheat Jr.,7/18/2015,shot,knife,22,M,W,Fort Collins,CO,TRUE
+652,Kevin Thomas Snyder,7/18/2015,shot,gun,46,M,W,Phoenix,AZ,FALSE
+654,Charles Edward Dewey,7/18/2015,shot,gun,65,M,,Colby,KS,FALSE
+653,Samuel Dubose,7/19/2015,shot,"car, vehicle",43,M,B,Mt. Auburn,OH,FALSE
+658,TK TK,7/20/2015,shot,gun,35,M,,Winnie,TX,FALSE
