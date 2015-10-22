@@ -148,12 +148,14 @@ function loadDateChart(rawData) {
 	for (var i = 0; i < rawData.length; i++) {
 		var date = rawData[i][2];
 		date = date.substring(5, 7);
-		console.log("Date: " + date);
+
+		// If not a two digit month then remove forward slash, two digit months won't have slash
 		if (date.indexOf("/") == 1) {
 			date = parseInt(date.substring(0, 1)) - 1;
 		} else {
 			date = parseInt(date) - 1;
 		}
+		
 		if (date != d.getMonth()) { //Prevent adding data for a month before the month is over
 			if (months[date] in dates) {
 				dates[months[date]] += 1;
