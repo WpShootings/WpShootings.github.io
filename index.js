@@ -148,6 +148,8 @@ function loadDateChart(rawData) {
 	for (var i = 0; i < rawData.length; i++) {
 		var date = rawData[i][2];
 		date = date.substring(5, 7);
+		var year = rawData[i][2];
+		year = year.substring(year.length - 4, year.length);
 
 		// If not a two digit month then remove forward slash, two digit months won't have slash
 		if (date.indexOf("/") == 1) {
@@ -156,7 +158,7 @@ function loadDateChart(rawData) {
 			date = parseInt(date) - 1;
 		}
 		
-		if (date != d.getMonth()) { //Prevent adding data for a month before the month is over
+		if (date != d.getMonth() && parseInt(year) === d.getFullYear()) { //Prevent adding data for a month before the month is over, expect if year's already passed
 			if (months[date] in dates) {
 				dates[months[date]] += 1;
 			} else {
