@@ -158,7 +158,7 @@ function loadDateChart(rawData) {
 			date = parseInt(date) - 1;
 		}
 		
-		if (date != d.getMonth() && parseInt(year) === d.getFullYear()) { //Prevent adding data for a month before the month is over, expect if year's already passed
+		if (parseInt(year) != d.getFullYear() || date != d.getMonth()) { //Prevent adding data for a month before the month is over, expect if year's already passed
 			if (months[date] in dates) {
 				dates[months[date]] += 1;
 			} else {
