@@ -13,7 +13,7 @@ Visualizations of Washington Post's police shooting data. Visualized using Chart
 [LinkedIn](https://www.linkedin.com/in/drakelevy)  
 
 [Washington Post Data License](https://github.com/washingtonpost/data-police-shootings/blob/master/LICENSE)  
-[d3.js](https://github.com/d3/d3) 
-[Datamaps](https://datamaps.github.io/)
-[Topojson](https://github.com/mbostock/topojson)
+[d3.js](https://github.com/d3/d3)  
+[Datamaps](https://datamaps.github.io/)  
+[Topojson](https://github.com/mbostock/topojson)  
 [Chart.js](https://github.com/nnnick/Chart.js)
